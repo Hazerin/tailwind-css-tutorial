@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alberto is cool</title>
+    <title>Alberto</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="math.css">
     <!-- LINK FOR ICON SET -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -14,9 +15,13 @@
 
 <body class="text-slate-900 min-h-screen relative text-sm sm:text-lg">
     <header class="flex justify-between p-8 gap-8 max-w-[1000px] m-auto">
-        <h1 >Auckland Maths Tutoring</h1>
-        <button  >Book a session</button>
-        <div >
+        <h1 class="text-2xl sm:text-3xl md:text-4xl">Auckland Maths Tutoring</h1>
+        <!--Opacity-0 è inteso. Il pulsante all'inizio deve rimanere invisibile-->
+        <button class="card-button-secondary px-4 py-2 rounded-full whitespace-nowrap
+          pointer-events-none opacity-0">
+          Book a session
+        </button>
+        <div class="fixed top-8 right-8">
             <button >Book a session</button>
         </div>
     </header>
@@ -156,7 +161,7 @@
     <footer >
         <a target='_blank' href='https://www.linkedin.com/in/jamezmcarthur/'>
             <img 
-                src='public/482288660_645169314591786_6128755034778771480_n.jpg'
+                src='/482288660_645169314591786_6128755034778771480_n.jpg'
                 alt='pfp' />
             <p>LinkedIn</p>
             <i className="fa-brands fa-linkedin-in"></i>
