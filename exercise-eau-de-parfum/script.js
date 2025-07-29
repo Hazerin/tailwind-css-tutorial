@@ -1,6 +1,5 @@
 function setParfumImage() {
     if (document.documentElement.clientWidth < 768) {
-        console.log(document.querySelector(".product-image"))
         document.querySelector(".product-image").src = "image-product-mobile.jpg"
     } else {
         document.querySelector(".product-image").src = "image-product-desktop.jpg"
